@@ -1,0 +1,6 @@
+hđ theo ng tắc LIFO
+last in first out
+vào cuối nma ra trước
+push() them vao
+pop() xoa
+top() lay ra

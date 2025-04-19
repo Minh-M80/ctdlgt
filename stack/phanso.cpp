@@ -45,7 +45,6 @@ void printData(Data data){
 void initStack(Stack &s){
     s.top=NULL:
     s.size=0;
-
 }
 
 //kiem tra rong

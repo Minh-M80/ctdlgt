@@ -64,7 +64,7 @@ bool isEmpty(List L){
 }
 
 NodePtr CreateNode(Data data){
-    NodePtr newNode-new Node;
+    NodePtr newNode=new Node;
     newNode->data=data;
     newNode->next=NULL;
     newNode->prev=NULL;

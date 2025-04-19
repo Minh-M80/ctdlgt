@@ -36,7 +36,11 @@ Data inputData(){
 }
 //In thông tin của 1 nút
 void printNodeInfo(NodePtr pnode){
-    cout<<"Ma sinh vien: "<<pnode->data.maSinhVien<<" Ten sinh vien: "<<pnode->data.tenSinhVien<<" Lop: "<<pnode->data.lop<<" Diem tong ket: "<<pnode->data.diemTongKet<<" Hanh kiem: "<<pnode->data.hanhKiem<<endl;
+    cout<<"Ma sinh vien: "<<pnode->data.maSinhVien
+    <<" Ten sinh vien: "<<pnode->data.tenSinhVien
+    <<" Lop: "<<pnode->data.lop<<" Diem tong ket: "
+    <<pnode->data.diemTongKet<<" Hanh kiem: "
+    <<pnode->data.hanhKiem<<endl;
 }
 
 void initialize(List &L){
@@ -137,26 +141,16 @@ void insertTail(List &L,Data data){
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 int main(){
-
+    int n;
+    cout<<"Nhap so luong nhan vien:";
+    cin>>n;
+    cin.ignore();
+    List L;
+    initialize(L);
+    for(int i=0;i<n;i++){
+        cout<<"Nhap thong tin nhan vien:"<<i+i<<":"<<endl;
+        Data nhanvien=inputData();
+        insertHead(L,nhanvien);
+    }
 }

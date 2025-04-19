@@ -49,7 +49,7 @@ int sizeOfStack(Stack s){
 }
 
 //Tạo một nút
-NodePtrj createNode(Data data){
+NodePtr createNode(Data data){
     NodePtr p=new Node;
     if(p==NULL) return NULL;
     p->next=NULL;
@@ -143,7 +143,7 @@ int main(){
     cout<<"Nhap so luong so phuc: ";
     cin>>n;
     for(int i=0;i<n;i++){
-        cout<<"Nhap so phuc "<<i+1<<": "<endl;
+        cout<<"Nhap so phuc "<<i+1<<": "<<endl;
         Data sp=inputData();
         push(s,sp);
 
@@ -151,7 +151,8 @@ int main(){
     cout<<"====DANH SACH CAC SO PHUC CO TRONG NGAN XEP===="<<endl;
     traverse(s);
     cout<<"====DANH SACH CAC SO PHUC CO TRONG NGAN XEP VA TONG CUA CHUNG===="<<endl;
-    // hienThiVaTinhTong(s);
-    hienThiVaTinhTong2(s);
+     hienThiVaTinhTong(s);
+//    hienThiVaTinhTong2(s);
+    traverse(s);
     if(isEmpty(s)) cout<<"Stack is empty"<<endl;
 }

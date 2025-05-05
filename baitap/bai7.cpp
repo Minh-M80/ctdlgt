@@ -171,14 +171,6 @@ void deleteTail(List &L){
 }
 
 
-
-
-
-
-
-
-
-
 int main(){
-
+    
 }

@@ -133,19 +133,7 @@ void deleteTail(List &L){
     
 }
 // Hàm liệt kê vé máy bay khởi hành từ TPHCM
-void listTicketsFromTPHCM(List L) {
-    NodePtr temp = L.head;
-    cout << "Danh sach ve khoi hanh tu TPHCM:\n";
-    while (temp != NULL) {
-        if (temp->data.diemKhoiHanh == "TPHCM") {
-            cout << "Ma ve: " << temp->data.maVe<<" "
-                 << ", Loai ve: " << temp->data.loaiVe<<" "
-                 << ", Diem den: " << temp->data.diemDen<<" "
-                 << ", Gia: " << temp->data.gia << "\n";
-        }
-        temp = temp->next;
-    }
-}
+
 
 int main(){
     int n;
